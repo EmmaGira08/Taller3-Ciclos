@@ -65,6 +65,31 @@ public class Calculos {
                     System.out.println("El primo número " + nPrimo + " es: " + numero);
                     break;
                     
+                    case 3:
+                    System.out.print("Ingrese coeficiente a: ");
+                    double coefA = scanner.nextDouble();
+                    System.out.print("Ingrese coeficiente b: ");
+                    double coefB = scanner.nextDouble();
+                    System.out.print("Ingrese coeficiente c: ");
+                    double coefC = scanner.nextDouble();
+
+                    if (coefA == 0) {
+                        System.out.println("No es una ecuación cuadrática (a no puede ser 0).");
+                    } else {
+                        double discriminante = (coefB * coefB) - (4 * coefA * coefC);
+
+                        if (discriminante >= 0) {
+                            double x1 = (-coefB + Math.sqrt(discriminante)) / (2 * coefA);
+                            double x2 = (-coefB - Math.sqrt(discriminante)) / (2 * coefA);
+                            System.out.println("x1 = " + x1);
+                            System.out.println("x2 = " + x2);
+                        } else {
+                            System.out.println("Las raíces son complejas/imaginarias.");
+                        }
+                    }
+                    break;
+
+                    
                     }
 
                     }
