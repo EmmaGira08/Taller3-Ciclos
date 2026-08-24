@@ -1,3 +1,5 @@
+/*Programa realizado por Emmanuel Giraldo */
+
 import java.util.Scanner;
 
 public class Calculos {
@@ -8,13 +10,28 @@ public class Calculos {
 
         // Ciclo principal del menú
         while (opcion != 5) {
-            System.out.println("\n--- MENÚ PRINCIPAL ---");
-            System.out.println("1. Suma n-ésimo término de Fibonacci");
-            System.out.println("2. Calcular el n-ésimo número primo");
-            System.out.println("3. Calcular raíces de ecuación cuadrática");
-            System.out.println("4. Calcular promedio de n números");
-            System.out.println("5. Salir");
-            System.out.print("Seleccione una opción: ");
+            System.out.println("=========================================================");
+            System.out.println("                   _________________");
+            System.out.println("                  |  _____________  |");
+            System.out.println("                  | |   Calculos  | |");
+            System.out.println("                  | |     Menú    | |");
+            System.out.println("                  | |_____________| |");
+            System.out.println("                  | ___ ___ ___ ___ |");
+            System.out.println("                  | |7| |8| |9| |+| |");
+            System.out.println("                  | |4| |5| |6| |-| |");
+            System.out.println("                  | |1| |2| |3| |*| |");
+            System.out.println("                  | |0| |.|=| |/| | |");
+            System.out.println("                  |_________________|");
+            System.out.println("=========================================================");
+            System.out.println("                   MENÚ DE OPCIONES                      ");
+            System.out.println("---------------------------------------------------------");
+            System.out.println("  [1] 🌀 Suma n-ésimo término de Fibonacci");
+            System.out.println("  [2] 🔢 Calcular el n-ésimo número primo");
+            System.out.println("  [3] 📐 Calcular raíces de ecuación cuadrática");
+            System.out.println("  [4] 📊 Calcular promedio de n números");
+            System.out.println("  [5] 🚪 Salir");
+            System.out.println("=========================================================");
+            System.out.print("👉 Seleccione una opción: ");
 
             // Validación básica para evitar fallos al ingresar texto
             if (!scanner.hasNextInt()) {
