@@ -41,4 +41,34 @@ public class Calculos {
                     System.out.println("La suma de los primeros " + nFib + " términos es: " + suma);
                     break;
 
-               }
+                case 2:
+                    System.out.print("Ingrese la posición n del número primo: ");
+                    int nPrimo = scanner.nextInt();
+
+                    int encontrados = 0;
+                    int numero = 1;
+
+                    while (encontrados < nPrimo) {
+                        numero++;
+                        int divisores = 0;
+                        
+                        for (int i = 1; i <= numero; i++) {
+                            if (numero % i == 0) {
+                                divisores++;
+                            }
+                        }
+                        
+                        if (divisores == 2) {
+                            encontrados++;
+                        }
+                    }
+                    System.out.println("El primo número " + nPrimo + " es: " + numero);
+                    break;
+                    
+                    }
+
+                    }
+
+                    }
+
+                    }
