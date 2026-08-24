@@ -89,11 +89,33 @@ public class Calculos {
                     }
                     break;
 
-                    
+                    case 4:
+                    System.out.print("¿Cuántos números va a ingresar?: ");
+                    int nProm = scanner.nextInt();
+
+                    double sumaProm = 0;
+                    for (int i = 1; i <= nProm; i++) {
+                        System.out.print("Ingrese el número " + i + ": ");
+                        sumaProm += scanner.nextDouble();
                     }
 
-                    }
+                    double promedio = sumaProm / nProm;
+                    System.out.println("El promedio es: " + promedio);
+                    break;
 
-                    }
+                case 5:
+                    System.out.println("¡Hasta luego!");
+                    break;
 
-                    }
+                default:
+                    System.out.println("Opción fuera de rango (1-5).");
+                    break;
+            }
+        }
+
+        scanner.close();
+    }
+}
+
+
+                   
